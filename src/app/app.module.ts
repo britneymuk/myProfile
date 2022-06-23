@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HomeComponent } from './home/home.component';
       {path:'contact', component: ContactComponent},
       {path:'home', component: HomeComponent},
       {path:'', redirectTo:'home', pathMatch:'full'}
-    ],{useHash: true})
+    ],{useHash: true}),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

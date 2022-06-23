@@ -1,0 +1,121 @@
+body{
+  background-color: rgb(77, 77, 77);
+  color: white;
+  font-family: tahoma;
+  font-size: 1.3rem;
+}
+.cover{
+  color:rgb(29, 29, 29);
+}
+
+.nav-link{
+  margin-bottom: 10px;
+  padding-left: 3px;
+  padding-right: 20px;
+}
+
+.nav-link{
+  color:rgb(29, 29, 29);
+}
+
+.nav-link:hover{
+  color:rgba(29, 29, 29, 0.575);
+}
+
+/* Toast */
+.toast-container{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* About me */
+.about_me {
+  font-size: 3rem;
+}
+.sliding_text{
+  height: 80px;
+  width: 500px;
+  overflow: hidden;
+  position:relative;
+  height: 70px;
+}
+.message {
+  background-color: yellow;
+  color: rgb(77, 77, 77);
+  display: block;
+  font-weight: 900;
+  padding-left: 0.5rem;
+  overflow: hidden;
+  position:absolute;
+  animation: openclose 5s ease-in-out infinite;
+}
+
+@keyframes openclose {
+  0% {
+    top: 0rem;
+    width: 0;
+  }
+  10% {
+    width: 150px;
+  }
+  30% {
+    width: 150px;
+  }
+  50% {
+    top: 0rem;
+    width: 0;
+  }
+  51% {
+    top: -4.5rem;
+    width: 0;
+  }
+  70% {
+    width: 300px;
+  }
+  85% {
+    width: 300px;
+  }
+  100% {
+    top: -4.5rem;
+    width: 0px;
+  }
+}
+
+/* WAVE */
+.wave-bg {
+  display: block;
+  height: 220px;
+  width: 100%;
+  /* min-width: 600px; */
+  transform-origin: top;
+  animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  background-image: url("src\assets\images\wave-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes animateWave {
+  0% {
+    transform: scale(1, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+img.avatar {
+  border-radius: 30px;
+  margin-left: 40px;
+}
+
+/* Education */
+.education{
+  padding: 30px;
+  width: fit-content;
+}
+
+/* Experience */
+.card{
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.568);
+}

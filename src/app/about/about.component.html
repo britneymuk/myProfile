@@ -1,1 +1,278 @@
-<p>about page work!</p>
+<body>
+  <div class="cover bg-light pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 p-2"><img class="img-fluid" src="..\assets\images\hello3.svg" alt="hello" /></div>
+        <div class="col-lg-6">
+          <div class="mt-5">
+            <p class="lead text-uppercase mb-1">Hello!</p>
+            <h1 data-aos="zoom-out-right">I'm Britney Muk</h1>
+            <p class="lead fw-normal mt-3" data-aos="fade-up">Would you like to know more about me?</p>
+            <ul class="nav" data-aos="fade-up">
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/britney.muk/"><i
+                    class="fab fa-facebook fa-lg"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/britneymuk/"><i
+                    class="fab fa-instagram fa-lg"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/britney-muk-451a85233/"><i
+                    class="fab fa-linkedin fa-lg"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/britneymuk"><i class="fab fa-github fa-lg"></i></a>
+              </li>
+            </ul>
+            <div data-aos="fade-up">
+              <a class="btn btn-secondary shadow-sm mt-1 hover-effect" (click)="downloadResume()">Download Resume <i
+                  class="fa-solid fa-download fa-lg"></i></a>
+            </div>
+            <div data-aos="fade-up">
+              <a class="btn btn-secondary shadow-sm mt-1 hover-effect" (click)="downloadCV()">Download CV <i
+                  class="fa-solid fa-download fa-lg"></i></a>
+            </div>
+
+              <div class="toast-container">
+                <ngb-toast *ngIf="show1" header="Britney's Resume" [autohide]="true" (hidden)="show1=false">
+                  Updated on 23/6/2022.
+                </ngb-toast>
+              </div>
+              <div class="toast-container">
+                <ngb-toast *ngIf="show2" header="Britney's CV" [autohide]="true" (hidden)="show2=false">
+                  Updated on 23/6/2022.
+                </ngb-toast>
+              </div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wave-bg"></div>
+
+  <div class="container">
+    <!-- Little Intro -->
+    <div class="row mt-5">
+      <div class="row justify-content-center" style="font-size: 3rem;">
+        <div class="col-md-auto">
+          <p>A LITTLE BIT ABOUT </p>
+        </div>
+        <div class="col-md-auto">
+          <div class="sliding_text">
+            <div class="message">
+              <div class="word1">ME</div>
+              <div class="word2">BRITNEY</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <div class="row justify-content-center my-4">
+      <div class="col-md-6" data-aos="fade-right">
+        <p>I believe that the only true wisdom is in knowing you know nothing and not being arrogant and opinionated.
+        <strong>Work hard, work smart, stay humble!</strong></p>
+        <div class="row mt-3">
+          <div class="col-sm-3">
+            <div class="pb-1">Name:</div>
+          </div>
+          <div class="col-sm-9">
+            <div class="pb-1 px-3 fw-bolder">Britney Muk Yuen Kuan</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="pb-1">DOB:</div>
+          </div>
+          <div class="col-sm-9">
+            <div class="pb-1 px-3 fw-bolder">15 December 2000</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="pb-1">Email:</div>
+          </div>
+          <div class="col-sm-9">
+            <div class="pb-1 px-3 fw-bolder">Britney.mb30@gmail.com</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="pb-1">Phone:</div>
+          </div>
+          <div class="col-sm-9">
+            <div class="pb-1 px-3 fw-bolder">+6016-743 9559</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="pb-1">Nationality:</div>
+          </div>
+          <div class="col-sm-9">
+            <div class="pb-1 px-3 fw-bolder">Malaysian</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="pb-1">Status:</div>
+          </div>
+          <div class="col-sm-9">
+            <div class="pb-1 px-3 fw-bolder">Available</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-left"><img class="avatar img-fluid mt-2" src="../assets/images/avatar.jpg" alt="Britney"/></div>
+    </div>
+    </div>
+    
+
+    <!-- Education -->
+    <div class="row mt-5">
+      <div class="col mt-5">
+        <div class="row text-center">
+          <h1 class="fw-bolder"><i class="fa-solid fa-school px-3" style="color:rgb(230, 199, 98)"></i>Education</h1>
+        </div>
+        <div class="container education" data-aos="fade-up">
+          <div class="row">
+            <h5><b>University Tunku Abdul Rahman</b></h5>
+            <h6><i class="fa fa-calendar px-2"></i>Jun 2019 - Jun 2022</h6>
+            <p>Bachelor of Computer Science (Honours)</p>
+            <hr>
+          </div>
+          <div class="row">
+            <h5><b>University Tunku Abdul Rahman</b></h5>
+            <h6><i class="fa fa-calendar px-2"></i>May 2018 - May 2019
+            </h6>
+            <p>Foundation in Science</p>
+            <hr>
+          </div>
+          <div class="row">
+            <h5><b>SMK Seri Perling</b></h5>
+            <h6><i class="fa fa-calendar px-2"></i>Jan 2013 - Dec 2017
+              </h6>
+            <p>SPM (Science stream)</p>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- My Skills -->
+    <div class="row justify-content-center mt-5">
+      <div class="row justify-content-center mt-5">
+        <div class="text-center">
+          <h1 class="fw-bolder"><i class="fa-solid fa-gear px-3" style="color:rgb(230, 199, 98)"></i>My Skills</h1>
+        </div>
+        <div class="text-center">
+          <h6 class="mx-auto my-3" style="max-width:600px; line-height: 170%;">I am a quick learner and having solid fundamental skills required for AI, Computer Vision and Web-App Development.</h6>
+        </div>
+        <div class="col-md-9 bg-secondary rounded mt-2 p-4">
+          <div class="row justify-content-center">
+            <div class="col-md-5">
+              <div class="py-1">
+                <div class="d-flex text-small fw-bolder"><span class="me-auto">C++</span><span>90%</span></div>
+                <div class="progress my-1">
+                  <div class="progress-bar bg-warning" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="py-1">
+                <div class="d-flex text-small fw-bolder"><span class="me-auto">VBA</span><span>90%</span></div>
+                <div class="progress my-1">
+                  <div class="progress-bar bg-warning" role="progressbar" data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="py-1">
+                <div class="d-flex text-small fw-bolder"><span class="me-auto">Python</span><span>80%</span></div>
+                <div class="progress my-1">
+                  <div class="progress-bar bg-warning" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="py-1">
+                <div class="d-flex text-small fw-bolder"><span class="me-auto">Java</span><span>75%</span></div>
+                <div class="progress my-1">
+                  <div class="progress-bar bg-warning" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 offset-md-1">
+              <div class="py-1">
+                <div class="d-flex text-small fw-bolder"><span class="me-auto">HTML5</span><span>70%</span></div>
+                <div class="progress my-1">
+                  <div class="progress-bar bg-warning" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="py-1">
+                <div class="d-flex text-small fw-bolder"><span class="me-auto">CSS</span><span>70%</span></div>
+                <div class="progress my-1">
+                  <div class="progress-bar bg-warning" role="progressbar" data-aos="zoom-in-right" data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="py-1">
+                <div class="d-flex text-small fw-bolder"><span class="me-auto">MySQL</span><span>60%</span></div>
+                <div class="progress my-1">
+                  <div class="progress-bar bg-warning" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="py-1">
+                <div class="d-flex text-small fw-bolder"><span class="me-auto">JavaScript</span><span>60%</span></div>
+                <div class="progress my-1">
+                  <div class="progress-bar bg-warning" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="row mt-5">
+      <div class="container">
+        <div class="text-center">
+          <h1 class="fw-bolder my-5"><i class="fa-solid fa-briefcase px-3" style="color:rgb(230, 199, 98)"></i>Experience</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card bg-secondary mb-3" data-aos="fade-right" data-aos-delay="100">
+              <div class="card-header px-3 py-2">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h3 class="mb-1">R&D Intern</h3>
+                    <div class="text-dark text-small">AMC Future Technology Sdn. Bhd. <small>(Oct 2021 - Jan 2022)</small></div>
+                  </div>
+                  <i class="fa-regular fa-file-code fa-2xl"></i>
+                </div>
+              </div>
+              <div class="card-body px-3 py-2">
+                <ul>
+                  <li>Assisted in the new product, audit software “Audit Express Pro” development.</li>
+                  <li>Created a summarised extensibility on Microsoft Office Backstage View (Custom UI, XMLbased formats).</li>
+                  <li>Researched and documented the conflict of icon and file extension of “AE pro” with commercial products.</li>
+                  <li style="list-style-type: none;">Proposed solutions to register file type using registry/batch file for Windows.</li>
+                  <li>Redesigned and built a new Key Tricks Manual through Microsoft HTML Help Workshop.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card bg-secondary mb-3" data-aos="fade-left" data-aos-delay="100">
+              <div class="card-header px-3 py-2">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h3 class="mb-1">Part-time Job / Event</h3>
+                    <div class="text-dark text-small"><small>(Dec 2017 - Apr 2018)</small></div>
+                  </div>
+                  <i class="fa-regular fa-file-code fa-2xl"></i>
+                </div>
+              </div>
+              <div class="card-body px-3 py-2">
+                <ul><strong>Fave</strong>
+                  <li>Promote FavePay application, asist first time user and explain the Fave cashback.</li>
+                </ul>
+                <ul><strong>Purina</strong>
+                  <li>Promote Purina Pro Plan Pet Food.</li>
+                </ul>
+                <ul><strong>CNY Store</strong>
+                  <li>Sell Chinese New Year decorations and lanterns.</li>
+                  <li>Handle multiple roles and tasks such as cashier, stock keeper and cleaner..</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
