@@ -1,27 +1,39 @@
-
-
-<div class="container">
-    <div class="row align-items-start">
-        <div class="col">
-            <div class="wrapper">
-                <div class="profile">
-                    <div class="overlay">
-                        <div class="about d-flex flex-column">
-                            <h4>Kim Sarah</h4> <span>Software Developer</span>
-                        </div>
-                        <ul class="social-icons">
-                            <li><a href="https://www.facebook.com/britney.muk/" class="link-light"><i class="fab fa-facebook" ></i></a></li>
-                            <li><a href="https://www.instagram.com/britneymuk/" class="link-light"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/britney-muk-451a85233/" class="link-light"><i class="fab fa-linkedin"></i></a></li>
-                            <li><a href="https://github.com/britneymuk" class="link-light"><i class="fab fa-github"></i></a></li>
-                            
-                        </ul>
-                    </div>
-                </div>
+<body>
+    <div class="container-fluid">
+        <div class="row text-center py-5">
+            <div class="waviy fw-bolder">
+                <span style="--i:1">c</span>
+                <span style="--i:2">o</span>
+                <span style="--i:3">n</span>
+                <span style="--i:4">t</span>
+                <span style="--i:5">a</span>
+                <span style="--i:6">c</span>
+                <span style="--i:7">t</span>
+                <span style="--i:8">.</span>
             </div>
         </div>
-        <div class="col">
-            <p>hi</p>
+        <div class="row text-center">
+            <p>Need to get in touch?</p>
         </div>
+        <div class="row-auto text-center py-5" data-aos="fade-up">
+            <i class="fa-solid fa-arrow-down-long fa-4x" (click)="toContact()" style="cursor: pointer;"></i>
+        </div>
+        <hr>
+
+        <div class="container" id="contact" style="margin-top: 200px;" >
+            <i class="fa-solid fa-envelope fa-9x"></i>
+            <h1 class="py-5 fw-bolder">Send me an email</h1>
+            <a href="mailto:britney.mb30@gmail.com" (mouseenter)="expand=true"(mouseleave)="expand=false">Britney.mb30@gmail.com ↗</a>
+            <h3 class="py-5">I will respond as soon as I can!</h3>
+        </div>
+        <div class="container text-end"  style="margin-top: 100px; padding-bottom: 100px;">
+            <i class="fa-brands fa-linkedin fa-9x"></i>
+            <h1 class="py-5 fw-bolder">Or get in touch with me on</h1>
+            <a href="https://www.linkedin.com/in/britney-muk-451a85233/" (mouseenter)="expand=true"(mouseleave)="expand=false">LinkedIn
+                <div class="cursor" [style.top]="top" [style.left]="left" [ngClass]="{'expand':expand}"></div>
+            </a>
+        </div>
+        
     </div>
-</div>
+    
+</body>

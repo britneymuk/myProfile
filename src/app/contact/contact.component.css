@@ -1,72 +1,73 @@
-.wrapper {
-    background: #000
+body {
+    background-color: rgb(77, 77, 77);
+    color: white;
+    font-family: tahoma;
+    font-size: 1.3rem;
 }
 
-.profile {
+.waviy {
+    margin-top: 6rem;
+}
+
+.waviy span {
     position: relative;
-    top: 10px;
-    left: 10px;
-    width: 300px;
-    height: 350px;
-    background: url("https://i.imgur.com/sAtgYjl.jpg");
-    background-size: cover;
-    cursor: pointer;
-    border: 12px;
-    border-top-right-radius: 35px !important;
-    border-radius: 6px
+    display: inline-block;
+    font-size: 6rem;
+    font-family: Georgia;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
 }
 
-.overlay {
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 12px;
-    cursor: pointer;
-    opacity: 0;
-    transition: all 1s;
-    border-top-right-radius: 35px !important;
-    border-radius: 6px
+@keyframes flip {
+    0%, 80% {
+        transform: rotateY(360deg)
+    }
 }
 
-.profile:hover .overlay {
-    opacity: 1
+a {
+    color: white;
+    font-size: 5vw;
+    display: inline-block;
+    text-decoration: none;
+    transition: font-size 0.5s;
 }
 
-.social-icons {
-    display: flex;
-    list-style: none;
-    bottom: 10px;
+a:link {
+    border-bottom: 2px solid #000;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    border-bottom: 0px;
+    cursor: none;
+    /* animation: zoom 0.4s forwards; */
+    font-size: 5.5vw;
+}
+
+@keyframes zoom {
+    0% {
+        font-size:6vw;
+    }
+    100% {
+        font-size:6.5vw;
+    }
+}
+
+.cursor {
+    pointer-events: none;
     position: absolute;
-    text-align: center;
-    justify-content: center;
-    left: 22px
+    mix-blend-mode: difference;
+    z-index: 1000;
+    background-color: white;
+    border-radius: 50%;
 }
 
-.social-icons li {
-    width: 25px;
-    height: 25px;
-    border: 1px solid #eee;
-    padding: 20px;
-    margin-right: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    border-radius: 5px;
-    transition: all 1s
-}
-
-.social-icons li:hover {
-    background: #fff;
-    color: #000
-}
-
-.overlay .about {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    top: 40%;
-    color: #fff;
-    flex: column
-}
+.expand {
+    height: 6vw;
+    width: 6vw;
+  }

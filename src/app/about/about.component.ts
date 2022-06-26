@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 // @ts-ignore
 import AOS from 'aos';
 
-import {NgbToast} from '@ng-bootstrap/ng-bootstrap';
-
 declare var require: any
 const FileSaver = require('file-saver');
 
@@ -14,9 +12,11 @@ const FileSaver = require('file-saver');
 })
 export class AboutComponent implements OnInit {
   
+  
   constructor() { }
   show1 = false;
   show2 = false;
+  
   ngOnInit(): void {
     AOS.init({
       duration: 2000,
@@ -42,5 +42,4 @@ export class AboutComponent implements OnInit {
   showSuccess2(){
     this.show2 = true;
   }
-  
 }
