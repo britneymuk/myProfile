@@ -34,7 +34,7 @@ a {
 }
 
 a:link {
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid white;
 }
 
 a:visited {
@@ -45,17 +45,7 @@ a:hover {
     text-decoration: none;
     border-bottom: 0px;
     cursor: none;
-    /* animation: zoom 0.4s forwards; */
     font-size: 5.5vw;
-}
-
-@keyframes zoom {
-    0% {
-        font-size:6vw;
-    }
-    100% {
-        font-size:6.5vw;
-    }
 }
 
 .cursor {
