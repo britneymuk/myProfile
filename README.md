@@ -29,5 +29,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Screenshot
 ![Screenshot](https://github.com/britneymuk/myProfile/blob/master/Screenshots/Home.gif)
 ![Screenshot](https://github.com/britneymuk/myProfile/blob/master/Screenshots/About%20Me.gif)
-![Screenshot](https://github.com/britneymuk/myProfile/blob/master/Screenshots/About%20me.png)
 ![Screenshot](https://github.com/britneymuk/myProfile/blob/master/Screenshots/Contact.png)
