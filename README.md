@@ -1,6 +1,13 @@
 # MyProfile
 
+[https://britneymuk.github.io/myProfile/](https://britneymuk.github.io/myProfile/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+
+## Screenshot
+![Screenshot](https://github.com/britneymuk/myProfile/blob/master/Screenshots/Home.gif)
+![Screenshot](https://github.com/britneymuk/myProfile/blob/master/Screenshots/About%20Me.gif)
+![Screenshot](https://github.com/britneymuk/myProfile/blob/master/Screenshots/Contact.png)
 
 ## Development server
 
@@ -26,6 +33,3 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-## Screenshot
-![Screenshot](https://github.com/britneymuk/myProfile/blob/master/Screenshots/About%20me.png)
-![Screenshot](https://github.com/britneymuk/myProfile/blob/master/Screenshots/Contact.png)
